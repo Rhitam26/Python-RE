@@ -1,0 +1,2 @@
+# Optional, only needed if you switch config.json to config.yaml
+pyyaml
