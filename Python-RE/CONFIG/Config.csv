@@ -1,0 +1,33 @@
+NAME,VALUE
+PROCESSNAME,P_NAME
+PROCESS_ID, PID
+
+IN,ABS_PATH/IN/
+LOGS,ABS_PATH/LOGS/
+OUT,ABS_PATH/OUT/
+ARCHIVE,ABS_PATH/ARCHIVE/
+REQUIRED,ABS_PATH/REQUIRED/
+ExceptionScreenShot,ABS_PATH/ARCHIVE/
+
+InputFile,input.csv
+
+TimeoutShortest,300
+TimeoutShort,5000
+TimeoutMedium,30000
+TimeoutLong,120000
+MaxRetryNumber,3
+
+
+ExchEmailTo,yourmail@gmail.com
+ExchEmailCc,Testmail@gmail.com
+
+ExchangeDomain,DOMAIN 
+ExchangeServer,SERVER DETAILS
+ExchangePort,SERVER_PORT
+
+ExchEmailBodySuccess,"<p>Hi,</p><p>The bot has finished executing the process. PFA the status report.</p>"
+ExchEmailBodyReport,"<head><style>table {border-collapse: collapse;}table, td, th {border: 1px solid black;}td {padding: 10px;}</style></head><body><table><tr><th> # Total Loans </th><th> # Loans Successfully Processed </th><th> # Loans Failed </th><th> # Invalid Loans </th></tr><tr><td>AAAAA</td><td>BBBBB</td><td>CCCCC</td><td>DDDDD</td></table></body><br>"
+ExchEmailBodyTime,"<table style,'width:auto'><tr><th> Process Start Time:  </th><td>AAAAA</td></tr><tr><th> Process End Time:  </th><td>BBBBB</td></tr><tr><th> SuccessRatio:  </th><td>CCCCC%</td></tr></table><br>"
+ExchEmailBodyNOFILE,"<p>Hi,</p>Input File is Missing Please palce the file and run the code again.<br><br>"
+ExchEmailBodyNODATA,"<p>Hi,</p>Please check the input File headers or the Data, there is no ValidData present in the file.<br><br>"
+ExchEmailBodyBRE,"<p>Hi,</p>The process Failed, We are looking into the issue. Please reach out to us for further details<br><br>"
