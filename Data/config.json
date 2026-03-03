@@ -1,0 +1,11 @@
+{
+  "MaxRetryNumber": 3,
+  "RetryDelaySeconds": 2,
+  "LogFile": "Logs/execution.log",
+  "LogLevel": "INFO",
+  "OrchestratorQueueName": "InvoiceProcessingQueue",
+  "TransactionsFolder": "Data/Transactions",
+  "OutputFolder": "Data/Output",
+  "BusinessExceptionsFolder": "Exceptions/Business",
+  "SystemExceptionsFolder": "Exceptions/System"
+}
